@@ -64,16 +64,22 @@ variable "vpc_connector" {
   type        = string
 
 }
-variable "source_archive_bucket" {
+# variable "source_archive_bucket" {
+#   description = "value"
+#   type        = string
+
+# }
+# variable "source_archive_object" {
+#   description = "value"
+#   type        = string
+
+# }
+variable "source_repository" {
   description = "value"
   type        = string
 
 }
-variable "source_archive_object" {
-  description = "value"
-  type        = string
 
-}
 # Firestore
 variable "collection" {
   description = "The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages."
