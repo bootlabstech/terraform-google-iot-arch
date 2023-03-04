@@ -36,7 +36,7 @@ resource "google_cloudfunctions_function" "function" {
     resource   = google_pubsub_topic.topic.name # interpolation referencing
   }
   depends_on = [
-    google_pubsub_topic.topic
+    google_firestore_document.main
   ]
 }
 # Creating Firestore Database
