@@ -40,14 +40,17 @@ variable "available_memory_mb" {
 variable "entry_point" {
   description = "Name of the function that will be executed when the Google Cloud Function is triggered."
   type        = string
+  default = "helloGET"
 }
 variable "event_type" {
   description = "The type of event to observe. For example: google.storage.object.finalize"
   type        = string
+  default = "google.pubsub.topic.publish"
 }
 variable "region" {
   description = "value"
   type        = string
+  default = "asia-south1"
 
 }
 variable "ingress_settings" {
@@ -89,10 +92,12 @@ variable "collection" {
 variable "document_id" {
   description = "The client-assigned document ID to use for this document during creation."
   type        = string
+  default = ""
 
 }
 variable "fields" {
   description = "The document's fields formated as a json string."
   type        = string
+  default = ""
 
 }
