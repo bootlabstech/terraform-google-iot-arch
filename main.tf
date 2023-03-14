@@ -24,9 +24,9 @@ resource "google_cloudfunctions_function" "function" {
   region  = var.region
 
   available_memory_mb           = var.available_memory_mb
-  source_repository             = var.source_repository
-  # source_archive_bucket         = var.source_archive_bucket # interpolation referencing
-  # source_archive_object         = var.source_archive_object # interpolation referencing
+  # source_repository             = var.source_repository
+  source_archive_bucket         = var.source_archive_bucket # interpolation referencing
+  source_archive_object         = var.source_archive_object # interpolation referencing
   entry_point                   = var.entry_point
   ingress_settings              = var.ingress_settings
   vpc_connector_egress_settings = var.vpc_connector_egress_settings

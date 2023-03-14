@@ -67,21 +67,21 @@ variable "vpc_connector" {
   type        = string
 
 }
-# variable "source_archive_bucket" {
-#   description = "value"
-#   type        = string
-
-# }
-# variable "source_archive_object" {
-#   description = "value"
-#   type        = string
-
-# }
-variable "source_repository" {
+variable "source_archive_bucket" {
   description = "value"
   type        = string
 
 }
+variable "source_archive_object" {
+  description = "value"
+  type        = string
+
+}
+# variable "source_repository" {
+#   description = "value"
+#   type        = string
+
+# }
 
 # Firestore
 variable "collection" {
